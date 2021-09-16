@@ -38,11 +38,21 @@ h5 {
   margin: 0;
 }
 
+h1 {
+  font-size: 31px;
+}
+
+.welcome-text {
+  font-size: 15px;
+}
+
 .socialmedia-align {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
   width: 110px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .subtitle-color {
@@ -161,26 +171,4 @@ h5 {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
   top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-
-  .header li a {
-    padding: 20px 30px;
-  }
-
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
-    display: none;
-  }
 }
