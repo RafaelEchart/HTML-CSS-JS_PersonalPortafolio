@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #f7f7f9;
 }
 
 a {
   color: #344563;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -171,4 +171,232 @@ h1 {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
   top: 0;
+}
+
+/* Division between sections */
+
+.division {
+  margin-top: 40px;
+}
+
+/* GRID STYLES */
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  margin-left: 4%;
+  margin-right: 4%;
+  max-width: 1156px;
+  border: 2px solid #dfe1e6;
+  border-radius: 24px;
+}
+
+/* Flex for cards */
+
+.flex-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.flex-card2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  max-width: 100%;
+}
+
+.flex_child {
+  display: flex;
+  flex-direction: row;
+}
+
+.text_child {
+  /* max-width: 604px;
+  width: 445px;
+  margin: 1.7vw; */
+}
+
+.text_child h1 {
+  font-weight: 700;
+  line-height: 25px;
+  line-height: 35px;
+}
+
+.text_child p {
+  color: #344563;
+  word-break: normal;
+
+  /* max-width: fit-content; */
+  max-width: 430px;
+}
+
+.imagen_proyectos {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.little_category {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.gray_text {
+  color: gray;
+  margin-left: 13px;
+  margin-top: 2.9px;
+  font-size: 0.8rem;
+}
+
+.see_project_button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 48px;
+  margin-top: 25px;
+  margin-bottom: 19px;
+  color: #396df2;
+  cursor: pointer;
+}
+
+.see_project_button span {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/**  BUTTON EFFECT  **/
+
+.see_project_button:hover {
+  background: #6070ff;
+  color: #fff;
+  transition: 0.2s 0.1s;
+}
+
+.see_project_button:active {
+  background: #2230d2;
+  color: #fff;
+  transition: 0s 0s;
+}
+
+/* ONLY TO CENTER IMAGE IN DESKTOP */
+@media only screen and (max-width: 1120px) {
+  .align_images {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1098px) {
+  .text_child {
+    margin-left: 2%;
+  }
+}
+
+.tag_label {
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  width: 45px;
+  height: 24px;
+  padding: 4px 12px;
+}
+
+.about-me {
+  background: white;
+  border-top-right-radius: 150px;
+}
+
+.about_me_container {
+  max-width: 1200px;
+  padding-top: 2%;
+}
+
+/* ACCORDION COLLAPSE */
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+  padding: 15px;
+  border-top: 0;
+}
+
+.accordion {
+  margin-bottom: 1em;
+  max-width: 65em;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  color: #333;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion .handle label::before {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+
+.arrow-margin {
+  margin-top: auto;
+}
+
+/* ABOUT MYSELF FRAMEWORKS INFO */
+
+.ul_box {
+  display: contents;
+  list-style: none;
+}
+
+.ul_box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 5px;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.ul_box li span {
+  margin-left: 10px;
 }
