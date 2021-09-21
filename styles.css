@@ -23,6 +23,11 @@ a {
   margin: 10%;
 }
 
+.contact-items {
+  text-align: center;
+  margin: 10%;
+}
+
 .background {
   background: url("./assets/Header.jpg");
   background-position: center center;
@@ -44,6 +49,15 @@ h1 {
 
 .welcome-text {
   font-size: 15px;
+}
+
+.aboutme-text {
+  font-size: 15px;
+  color: white;
+}
+.contactme-title {
+  
+  color: white;
 }
 
 .socialmedia-align {
@@ -177,6 +191,11 @@ h1 {
 
 .division {
   margin-top: 40px;
+}
+
+.division-about-me {
+  margin-top: 85px;
+  color: white;
 }
 
 /* GRID STYLES */
@@ -318,6 +337,11 @@ h1 {
 .about-me {
   background: white;
   border-top-right-radius: 150px;
+}
+
+.contact-me {
+  background: #6070FF;
+  border-top-left-radius: 150px;
 }
 
 .about_me_container {
