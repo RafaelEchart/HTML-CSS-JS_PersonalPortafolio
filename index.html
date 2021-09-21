@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin">
+
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -32,7 +35,7 @@
 
     <section class="background center-title">
       <div class="welcome-items">
-        <h1 class="contactme-title">
+        <h1>
           I'm Rafael<br />
           Glad to see you!
         </h1>
@@ -314,15 +317,14 @@
           </p>
 
           <div class="form-container">
-            <form action="/action_page.php">
+            <form action="https://formspree.io/f/mayavlvq" method="POST">
               <input type="text" id="name" name="name" maxlength="30" required placeholder="Enter your name" >
-              <input type="email" id="email" name="email" required placeholder="Enter your email" >
-              <textarea type="message" id="message" name="email" required placeholder="Write a message.."></textarea>
-              <input type="submit" value="Submit">
+              <input type="email" id="email" name="_replyto" required placeholder="Enter your email" >
+              <textarea id="message" maxlength="500" name="message" required placeholder="Write a message.."></textarea>
+              <button type="submit" class="send_form_button"><span>Send message!</span></button>
             </form> 
             
           </div>
-          <button type="button" class="see_project_button"><span>Get my resume</span></button>
         </div>
 
 
@@ -335,9 +337,7 @@
       
           
           <!-- Below here should be the contact form -->
-        </section>
-      </div>
-
+   
       </div>
     </section>
   </body>

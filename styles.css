@@ -25,11 +25,9 @@ a {
 
 .contact-items {
   text-align: center;
-  margin: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .background {
@@ -59,8 +57,8 @@ h1 {
   font-size: 15px;
   color: white;
 }
+
 .contactme-title {
-  
   color: white;
 }
 
@@ -289,6 +287,27 @@ h1 {
   margin-bottom: 19px;
   color: #396df2;
   cursor: pointer;
+  align-self: flex-start;
+}
+
+.send_form_button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 48px;
+  margin-top: 25px;
+  margin-bottom: 19px;
+  color: #396df2;
+  cursor: pointer;
+  align-self: flex-start;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.send_form_button:active {
+  background: #567e3a;
+  color: #fff;
+  transition: 0s 0s;
 }
 
 .see_project_button span {
@@ -344,7 +363,7 @@ h1 {
 }
 
 .form-container form {
-  max-width: 1200px;
+  max-width: 447px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -352,8 +371,17 @@ h1 {
 
 .form-container form input {
   padding: 10px;
-  margin: 8px 0; 
+  margin: 8px 0;
   border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.form-container form textarea {
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 10px;
+  margin: 5px 0;
 }
 
 .about-me {
@@ -362,8 +390,12 @@ h1 {
 }
 
 .contact-me {
-  background: #6070FF;
+  background: #6070ff;
   border-top-left-radius: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about_me_container {
