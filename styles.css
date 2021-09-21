@@ -240,12 +240,6 @@ h1 {
   flex-direction: row;
 }
 
-.text_child {
-  /* max-width: 604px;
-  width: 445px;
-  margin: 1.7vw; */
-}
-
 .text_child h1 {
   font-weight: 700;
   line-height: 25px;
