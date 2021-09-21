@@ -23,6 +23,13 @@ a {
   margin: 10%;
 }
 
+.contact-items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .background {
   background: url("./assets/Header.jpg");
   background-position: center center;
@@ -44,6 +51,15 @@ h1 {
 
 .welcome-text {
   font-size: 15px;
+}
+
+.aboutme-text {
+  font-size: 15px;
+  color: white;
+}
+
+.contactme-title {
+  color: white;
 }
 
 .socialmedia-align {
@@ -179,6 +195,11 @@ h1 {
   margin-top: 40px;
 }
 
+.division-about-me {
+  margin-top: 85px;
+  color: white;
+}
+
 /* GRID STYLES */
 
 .cards {
@@ -217,12 +238,6 @@ h1 {
 .flex_child {
   display: flex;
   flex-direction: row;
-}
-
-.text_child {
-  /* max-width: 604px;
-  width: 445px;
-  margin: 1.7vw; */
 }
 
 .text_child h1 {
@@ -266,6 +281,27 @@ h1 {
   margin-bottom: 19px;
   color: #396df2;
   cursor: pointer;
+  align-self: flex-start;
+}
+
+.send_form_button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 48px;
+  margin-top: 25px;
+  margin-bottom: 19px;
+  color: #396df2;
+  cursor: pointer;
+  align-self: flex-start;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.send_form_button:active {
+  background: #567e3a;
+  color: #fff;
+  transition: 0s 0s;
 }
 
 .see_project_button span {
@@ -315,9 +351,45 @@ h1 {
   padding: 4px 12px;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container form {
+  max-width: 447px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form input {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.form-container form textarea {
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 10px;
+  margin: 5px 0;
+}
+
 .about-me {
   background: white;
   border-top-right-radius: 150px;
+}
+
+.contact-me {
+  background: #6070ff;
+  border-top-left-radius: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about_me_container {
