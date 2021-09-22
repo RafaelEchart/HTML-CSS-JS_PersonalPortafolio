@@ -21,6 +21,13 @@ a {
 .welcome-items {
   text-align: left;
   margin: 10%;
+  max-width: 1000px;
+}
+
+.welcome-items2 {
+  text-align: left;
+  margin: 5%;
+  width: 100%;
 }
 
 .contact-items {
@@ -56,6 +63,7 @@ h1 {
 .aboutme-text {
   font-size: 15px;
   color: white;
+  max-width: 500px;
 }
 
 .contactme-title {
@@ -329,16 +337,21 @@ h1 {
   transition: 0s 0s;
 }
 
-/* ONLY TO CENTER IMAGE IN DESKTOP */
-@media only screen and (max-width: 1120px) {
-  .align_images {
-    margin: auto;
-  }
+.desktop-query-about-me-container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 1098px) {
   .text_child {
     margin-left: 2%;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .welcome-items2 {
+    width: 448px;
   }
 }
 
@@ -471,4 +484,8 @@ h1 {
 
 .ul_box li span {
   margin-left: 10px;
+}
+
+.align_images {
+  margin: auto;
 }
