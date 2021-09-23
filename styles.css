@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -21,6 +25,13 @@ a {
 .welcome-items {
   text-align: left;
   margin: 10%;
+  max-width: 1000px;
+}
+
+.welcome-items2 {
+  text-align: left;
+  margin: 5%;
+  width: 100%;
 }
 
 .contact-items {
@@ -56,6 +67,7 @@ h1 {
 .aboutme-text {
   font-size: 15px;
   color: white;
+  max-width: 500px;
 }
 
 .contactme-title {
@@ -76,6 +88,25 @@ h1 {
 }
 
 /* header */
+
+.desktopMenu-up {
+  display: none;
+}
+
+.topnav {
+  width: fit-content;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px 16px;
+}
+
+.hover_header:hover {
+  color: #6070ff;
+}
 
 .header {
   background-color: #fff;
@@ -329,16 +360,45 @@ h1 {
   transition: 0s 0s;
 }
 
-/* ONLY TO CENTER IMAGE IN DESKTOP */
-@media only screen and (max-width: 1120px) {
-  .align_images {
-    margin: auto;
-  }
+.desktop-query-about-me-container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 1098px) {
   .text_child {
     margin-left: 2%;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .welcome-items2 {
+    width: 448px;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .ul_box li {
+    width: 122px;
+    height: 122px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start !important;
+  }
+
+  .ul_box li span {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+
+  .ul_box li img {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
 
@@ -471,4 +531,34 @@ h1 {
 
 .ul_box li span {
   margin-left: 10px;
+}
+
+.align_images {
+  margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenu-up {
+    display: block !important;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: unset;
+  }
+
+  .max-width-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+  }
 }

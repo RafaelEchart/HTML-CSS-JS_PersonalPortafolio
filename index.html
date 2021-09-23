@@ -18,20 +18,35 @@
     <title>Rafael Echart Portafolio</title>
   </head>
   <body>
+
     <header class="header">
+    <div class="max-width-header">
+
       <a href="#" class="logo">Rafael Echart</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <nav>
-        <label class="menu-icon" for="menu-btn"
+      <div class="desktopMenu">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <nav>
+          <label class="menu-icon" for="menu-btn"
           ><span class="navicon"></span
-        ></label>
-      </nav>
-      <ul class="menu">
-        <li><a href="#portofolio">Portafolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+            ></label>
+          </nav>
+          <ul class="menu">
+            <li><a class="hover_header" href="#portfolio">Portafolio</a></li>
+            <li><a class="hover_header" href="#about">About</a></li>
+            <li><a class="hover_header" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        
+        <div class="topnav desktopMenu-up" id="myTopnav">
+          <a class="hover_header" href="#portfolio" >Portfolio</a>
+          <a class="hover_header" href="#about">About</a>
+          <a class="hover_header" href="#contact">Contact</a>
+         
+        </div>
+      </div>
+      </header>
+      
 
     <section class="background center-title">
       <div class="welcome-items">
@@ -77,7 +92,7 @@
     </section>
 
     <section class="division">
-      <div class="cards">
+      <div class="cards" id="portfolio">
         <div class="card division flex-card">
           <div class="align_images">
             <img
@@ -175,8 +190,8 @@
     </section>
 
     <section class="division about-me">
-      <div class="about_me_container">
-        <div class="welcome-items">
+      <div class="about_me_container desktop-query-about-me-container" id="about">
+        <div class="welcome-items2">
           <h1 class="division">
             About<br />
             Myself
@@ -219,7 +234,7 @@
         </div>
 
 
-        <div class="welcome-items">
+        <div class="welcome-items2">
 
 
         <section class="accordion">
@@ -230,7 +245,7 @@
             checked="checked"
           />
           <h2 class="handle">
-            <label for="handle1">Languages <img src="./assets/arrow.png" class="arrow-margin" height="13" width="18" alt="arrow"></label>
+            <label for="handle1">Languages<img src="./assets/arrow.png" class="arrow-margin" height="13" width="18" alt="arrow"></label>
           </h2>
           <div class="content">
 
@@ -240,8 +255,12 @@
               <span>JavaScript</span>
               </li>
               <li>
-                <img src="./assets/java-logo.png" alt="javascript-logo"/>
-              <span>Java</span>
+                <img src="./assets/html-logo.png" alt="javascript-logo"/>
+              <span>HTML</span>
+              </li>
+              <li>
+                <img src="./assets/css-logo.png" alt="javascript-logo"/>
+              <span>CSS</span>
               </li>
             </ul>
               
@@ -286,7 +305,7 @@
             <ul class="ul_box">
               <li>
                 <img src="./assets/voice-logo.png" alt="javascript-logo"/>
-              <span>Good communication</span>
+              <span>Soft skills</span>
               </li>
               <li>
                 <img src="./assets/group-logo.png" alt="javascript-logo"/>
@@ -305,7 +324,7 @@
 
       </div>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
       <div class="about_me_container">
         <div class="contact-items">
           <h1 class="division-about-me">
