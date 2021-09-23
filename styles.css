@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -84,6 +88,25 @@ h1 {
 }
 
 /* header */
+
+.desktopMenu-up {
+  display: none;
+}
+
+.topnav {
+  width: fit-content;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px 16px;
+}
+
+.hover_header:hover {
+  color: #6070ff;
+}
 
 .header {
   background-color: #fff;
@@ -488,4 +511,30 @@ h1 {
 
 .align_images {
   margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenu-up {
+    display: block !important;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: unset;
+  }
+
+  .max-width-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+  }
 }
