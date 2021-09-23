@@ -385,7 +385,6 @@ h1 {
     width: 122px;
     height: 122px;
     margin-right: 20px;
-
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -395,15 +394,12 @@ h1 {
   .ul_box li span {
     margin-top: 10px;
     font-weight: 700;
-
   }
 
-  .ul_box li img{
+  .ul_box li img {
     margin-top: 18px;
     margin-left: 10px;
   }
-
-
 }
 
 .tag_label {
