@@ -262,8 +262,8 @@ h1 {
 }
 
 .flex-card:hover {
-  border-color: #7A88FF;
-  box-shadow: 0px 10px 13px -7px #7A88FF;
+  border-color: #7a88ff;
+  box-shadow: 0 10px 13px -7px #7a88ff;
   cursor: pointer;
 }
 
@@ -277,11 +277,10 @@ h1 {
 }
 
 .flex-card2:hover {
-  border-color: #7A88FF;
-  box-shadow: 0px 10px 13px -7px #7A88FF;
+  border-color: #7a88ff;
+  box-shadow: 0 10px 13px -7px #7a88ff;
   cursor: pointer;
 }
-
 
 .flex_child {
   display: flex;
@@ -445,6 +444,19 @@ h1 {
   margin: 8px 0;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  transition-property: border-color;
+}
+
+.form-container form input:focus {
+  transition: 1.5s;
+  border-color: coral;
+  transform: scale(1.05);
+}
+
+.form-container form input:hover {
+  transition: 1.5s;
+  border-color: coral;
+  transform: scale(1.05);
 }
 
 .form-container form textarea {
@@ -453,6 +465,19 @@ h1 {
   border: 1px solid #cfd8dc;
   padding: 10px;
   margin: 5px 0;
+  transition-property: border-color;
+}
+
+.form-container form textarea:focus {
+  transition: 1.5s;
+  border-color: coral;
+  transform: scale(1.05);
+}
+
+.form-container form textarea:hover {
+  transition: 1.5s;
+  border-color: coral;
+  transform: scale(1.05);
 }
 
 .about-me {
