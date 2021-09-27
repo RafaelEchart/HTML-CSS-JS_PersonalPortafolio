@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="origin" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9B50CRRXH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-H9B50CRRXH");
+    </script>
 
     <link
       rel="stylesheet"
@@ -18,16 +32,14 @@
     <title>Rafael Echart Portafolio</title>
   </head>
   <body>
-
     <header class="header">
-    <div class="max-width-header">
-
-      <a href="#" class="logo">Rafael Echart</a>
-      <div class="desktopMenu">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <nav>
-          <label class="menu-icon" for="menu-btn"
-          ><span class="navicon"></span
+      <div class="max-width-header">
+        <a href="#" class="logo">Rafael Echart</a>
+        <div class="desktopMenu">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <nav>
+            <label class="menu-icon" for="menu-btn"
+              ><span class="navicon"></span
             ></label>
           </nav>
           <ul class="menu">
@@ -36,17 +48,14 @@
             <li><a class="hover_header" href="#contact">Contact</a></li>
           </ul>
         </div>
-        
-        
+
         <div class="topnav desktopMenu-up" id="myTopnav">
-          <a class="hover_header" href="#portfolio" >Portfolio</a>
+          <a class="hover_header" href="#portfolio">Portfolio</a>
           <a class="hover_header" href="#about">About</a>
           <a class="hover_header" href="#contact">Contact</a>
-         
         </div>
       </div>
-      </header>
-      
+    </header>
 
     <section class="background center-title">
       <div class="welcome-items">
@@ -120,7 +129,9 @@
               <label class="tag_label">Node backend</label>
             </div>
 
-            <button type="button" class="see_project_button"><span>See project</span></button>
+            <button type="button" class="see_project_button">
+              <span>See project</span>
+            </button>
           </div>
         </div>
 
@@ -143,7 +154,9 @@
               <label class="tag_label">Node backend</label>
             </div>
 
-            <button type="button" class="see_project_button"><span>See project</span></button>
+            <button type="button" class="see_project_button">
+              <span>See project</span>
+            </button>
           </div>
 
           <div class="align_images">
@@ -183,14 +196,19 @@
               <label class="tag_label">CSS</label>
             </div>
 
-            <button type="button" class="see_project_button"><span>See project</span></button>
+            <button type="button" class="see_project_button">
+              <span>See project</span>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
     <section class="division about-me">
-      <div class="about_me_container desktop-query-about-me-container" id="about">
+      <div
+        class="about_me_container desktop-query-about-me-container"
+        id="about"
+      >
         <div class="welcome-items2">
           <h1 class="division">
             About<br />
@@ -230,133 +248,154 @@
               /></a>
             </li>
           </ul>
-          <button type="button" class="see_project_button"><span>Get my resume</span></button>
+          <button type="button" class="see_project_button">
+            <span>Get my resume</span>
+          </button>
         </div>
 
-
         <div class="welcome-items2">
+          <section class="accordion">
+            <input
+              type="checkbox"
+              name="collapse"
+              id="handle1"
+              checked="checked"
+            />
+            <h2 class="handle">
+              <label for="handle1"
+                >Languages<img
+                  src="./assets/arrow.png"
+                  class="arrow-margin"
+                  height="13"
+                  width="18"
+                  alt="arrow"
+              /></label>
+            </h2>
+            <div class="content">
+              <ul class="ul_box">
+                <li>
+                  <img src="./assets/js-logo.png" alt="javascript-logo" />
+                  <span>JavaScript</span>
+                </li>
+                <li>
+                  <img src="./assets/html-logo.png" alt="javascript-logo" />
+                  <span>HTML</span>
+                </li>
+                <li>
+                  <img src="./assets/css-logo.png" alt="javascript-logo" />
+                  <span>CSS</span>
+                </li>
+              </ul>
+            </div>
+          </section>
 
+          <hr />
 
-        <section class="accordion">
-          <input
-            type="checkbox"
-            name="collapse"
-            id="handle1"
-            checked="checked"
-          />
-          <h2 class="handle">
-            <label for="handle1">Languages<img src="./assets/arrow.png" class="arrow-margin" height="13" width="18" alt="arrow"></label>
-          </h2>
-          <div class="content">
+          <section class="accordion">
+            <input type="checkbox" name="collapse2" id="handle3" />
+            <h2 class="handle">
+              <label for="handle3"
+                >Frameworks<img
+                  src="./assets/arrow.png"
+                  class="arrow-margin"
+                  height="13"
+                  width="18"
+                  alt="arrow"
+                />
+              </label>
+            </h2>
+            <div class="content">
+              <ul class="ul_box">
+                <li>
+                  <img src="./assets/react-logo.png" alt="javascript-logo" />
+                  <span>React js</span>
+                </li>
+                <li>
+                  <img src="./assets/express-logo.png" alt="javascript-logo" />
+                  <span>Express js</span>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-            <ul class="ul_box">
-              <li>
-                <img src="./assets/js-logo.png" alt="javascript-logo"/>
-              <span>JavaScript</span>
-              </li>
-              <li>
-                <img src="./assets/html-logo.png" alt="javascript-logo"/>
-              <span>HTML</span>
-              </li>
-              <li>
-                <img src="./assets/css-logo.png" alt="javascript-logo"/>
-              <span>CSS</span>
-              </li>
-            </ul>
-              
-          </div>
-        </section>
+          <hr />
 
-        <hr>
-
-        <section class="accordion">
-          <input type="checkbox" name="collapse2" id="handle3" />
-          <h2 class="handle">
-            <label for="handle3">Frameworks<img src="./assets/arrow.png" class="arrow-margin" height="13" width="18" alt="arrow">
-            </label>
-          </h2>
-          <div class="content">
-            
-            <ul class="ul_box">
-              <li>
-                <img src="./assets/react-logo.png" alt="javascript-logo"/>
-              <span>React js</span>
-              </li>
-              <li>
-                <img src="./assets/express-logo.png" alt="javascript-logo"/>
-              <span>Express js</span>
-              </li>
-            </ul>
-
-
-          </div>
-        </section>
-
-        <hr>
-
-        <section class="accordion">
-          <input type="checkbox" name="collapse3" id="handle2" />
-          <h2 class="handle">
-            <label for="handle2">Skills<img src="./assets/arrow.png" class="arrow-margin" height="13" width="18" alt="arrow">
-            </label>
-          </h2>
-          <div class="content">
-            
-            <ul class="ul_box">
-              <li>
-                <img src="./assets/voice-logo.png" alt="javascript-logo"/>
-              <span>Soft skills</span>
-              </li>
-              <li>
-                <img src="./assets/group-logo.png" alt="javascript-logo"/>
-              <span>Group work</span>
-              </li>
-            </ul>
-
-            
-          </div>
-          <!-- Below here should be the contact form -->
-          <br/>
-          <br/>
-          <br/>
-        </section>
-      </div>
-
+          <section class="accordion">
+            <input type="checkbox" name="collapse3" id="handle2" />
+            <h2 class="handle">
+              <label for="handle2"
+                >Skills<img
+                  src="./assets/arrow.png"
+                  class="arrow-margin"
+                  height="13"
+                  width="18"
+                  alt="arrow"
+                />
+              </label>
+            </h2>
+            <div class="content">
+              <ul class="ul_box">
+                <li>
+                  <img src="./assets/voice-logo.png" alt="javascript-logo" />
+                  <span>Soft skills</span>
+                </li>
+                <li>
+                  <img src="./assets/group-logo.png" alt="javascript-logo" />
+                  <span>Group work</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Below here should be the contact form -->
+            <br />
+            <br />
+            <br />
+          </section>
+        </div>
       </div>
     </section>
     <section class="contact-me" id="contact">
       <div class="about_me_container">
         <div class="contact-items">
-          <h1 class="division-about-me">
-            Contact me
-          </h1>
+          <h1 class="division-about-me">Contact me</h1>
 
           <p class="aboutme-text">
-            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
           </p>
 
           <div class="form-container">
             <form action="https://formspree.io/f/mayavlvq" method="POST">
-              <input type="text" id="name" name="name" maxlength="30" required placeholder="Enter your name" >
-              <input type="email" id="email" name="_replyto" required placeholder="Enter your email" >
-              <textarea id="message" maxlength="500" name="message" required placeholder="Write a message.."></textarea>
-              <button type="submit" class="send_form_button"><span>Send message!</span></button>
-            </form> 
-            
+              <input
+                type="text"
+                id="name"
+                name="name"
+                maxlength="30"
+                required
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                required
+                placeholder="Enter your email"
+              />
+              <textarea
+                id="message"
+                maxlength="500"
+                name="message"
+                required
+                placeholder="Write a message.."
+              ></textarea>
+              <button type="submit" class="send_form_button">
+                <span>Send message!</span>
+              </button>
+            </form>
           </div>
         </div>
 
-
-        
-
-        
-
-        
-
-      
-          
-          <!-- Below here should be the contact form -->
-   
+        <!-- Below here should be the contact form -->
       </div>
     </section>
   </body>
