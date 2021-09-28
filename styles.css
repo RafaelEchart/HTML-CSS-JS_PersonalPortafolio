@@ -1,3 +1,8 @@
+:root {
+  --gray_tag_color: #737373;
+  --tag_color: #3D51FF;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -66,8 +71,10 @@ h1 {
 
 .aboutme-text {
   font-size: 15px;
-  color: white;
+  font-weight: 700;
+  color: #000000;
   max-width: 500px;
+  text-shadow: 0 0 0.9px white, 0 0 0.9px white;
 }
 
 .contactme-title {
@@ -84,7 +91,7 @@ h1 {
 }
 
 .subtitle-color {
-  color: #7f8cff;
+  color: #4D5EFF;
 }
 
 /* header */
@@ -146,7 +153,7 @@ h1 {
   padding: 10px 20px;
   margin-top: 6.5px;
   text-decoration: none;
-  color: #6070ff;
+  color: #4255FF;
   font-style: normal;
 }
 
@@ -312,7 +319,7 @@ h1 {
 }
 
 .gray_text {
-  color: gray;
+  color: var(--gray_tag_color);
   margin-left: 13px;
   margin-top: 2.9px;
   font-size: 0.8rem;
@@ -419,7 +426,7 @@ h1 {
 }
 
 .tag_label {
-  color: #6070ff;
+  color: var(--tag_color);
   background-color: #ebebff;
   border-radius: 8px;
   width: 45px;
@@ -603,4 +610,8 @@ h1 {
     max-width: 1350px;
     margin: auto;
   }
+}
+
+.accessibility-helper{
+  display: none ;
 }

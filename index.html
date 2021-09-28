@@ -38,8 +38,9 @@
         <div class="desktopMenu">
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <nav>
-            <label class="menu-icon" for="menu-btn"
-              ><span class="navicon"></span
+            <label class="menu-icon" for="menu-btn">
+              
+              <span name="menu-btn" class="navicon"></span
             ></label>
           </nav>
           <ul class="menu">
@@ -366,6 +367,7 @@
 
           <div class="form-container">
             <form action="https://formspree.io/f/mayavlvq" method="POST">
+              <label for="name" class="accessibility-helper">Name</label>
               <input
                 type="text"
                 id="name"
@@ -374,6 +376,7 @@
                 required
                 placeholder="Enter your name"
               />
+              <label for="email" class="accessibility-helper">Email</label>
               <input
                 type="email"
                 id="email"
@@ -381,6 +384,8 @@
                 required
                 placeholder="Enter your email"
               />
+              <label for="message" class="accessibility-helper">Message</label>
+
               <textarea
                 id="message"
                 maxlength="500"
