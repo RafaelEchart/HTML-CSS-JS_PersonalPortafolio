@@ -1,6 +1,6 @@
 :root {
   --gray_tag_color: #737373;
-  --tag_color: #3D51FF;
+  --tag_color: #3d51ff;
 }
 
 html {
@@ -72,7 +72,7 @@ h1 {
 .aboutme-text {
   font-size: 15px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   max-width: 500px;
   text-shadow: 0 0 0.9px white, 0 0 0.9px white;
 }
@@ -91,7 +91,7 @@ h1 {
 }
 
 .subtitle-color {
-  color: #4D5EFF;
+  color: #4d5eff;
   font-size: 16px;
   font-weight: 500;
 }
@@ -155,7 +155,7 @@ h1 {
   padding: 10px 20px;
   margin-top: 6.5px;
   text-decoration: none;
-  color: #4255FF;
+  color: #4255ff;
   font-style: normal;
 }
 
@@ -614,6 +614,6 @@ h1 {
   }
 }
 
-.accessibility-helper{
-  display: none ;
+.accessibility-helper {
+  display: none;
 }
