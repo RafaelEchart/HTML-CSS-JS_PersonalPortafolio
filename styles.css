@@ -120,7 +120,6 @@ h1 {
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -616,4 +615,25 @@ h1 {
 
 .accessibility-helper {
   display: none;
+}
+
+.mobileMenuCover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: blue;
+  height: 100vh;
+  opacity: 0.5;
+  display: none;
+}
+
+.firstContainer {
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 24px;
+  color: antiquewhite;
 }
