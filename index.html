@@ -32,21 +32,17 @@
     <title>Rafael Echart Portafolio</title>
   </head>
   <body>
+    <div class="main">
     <header class="header">
       <div class="max-width-header">
         <a href="#" class="logo">Rafael Echart</a>
         <div class="desktopMenu">
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <input class="menu-btn" type="checkbox" title="Reset Form" value="Reset Form" id="menu-btn" />
           <nav>
-            <label class="menu-icon" for="menu-btn"
-              ><span class="navicon"></span
+            <label class="menu-icon"  id="menuButton" for="menu-btn">
+              <span class="navicon" ></span
             ></label>
           </nav>
-          <ul class="menu">
-            <li><a class="hover_header" href="#portfolio">Portafolio</a></li>
-            <li><a class="hover_header" href="#about">About</a></li>
-            <li><a class="hover_header" href="#contact">Contact</a></li>
-          </ul>
         </div>
 
         <div class="topnav desktopMenu-up" id="myTopnav">
@@ -70,7 +66,7 @@
           you see and have a project you need coded, don’t hestiate to contact
           me.
         </p>
-        <h4 class="subtitle-color">LET'S CONNECT</h4>
+        <h2 class="subtitle-color">LET'S CONNECT</h2>
         <ul class="socialmedia-align">
           <li>
             <a
@@ -108,7 +104,7 @@
               src="./assets/proyecto1.png"
               width="554"
               class="imagen_proyectos"
-              alt="proyecto_1"
+              alt="proyect Ecommerce"
             />
           </div>
           <div class="text_child">
@@ -164,7 +160,7 @@
               src="./assets/proyecto2.png"
               width="554"
               class="imagen_proyectos"
-              alt="proyecto_1"
+              alt="proyecto dashboard"
             />
           </div>
         </div>
@@ -221,7 +217,7 @@
             what you see and have a project you need coded, don’t hestiate to
             contact me.
           </p>
-          <h4 class="subtitle-color">LET'S CONNECT</h4>
+          <h2 class="subtitle-color">LET'S CONNECT</h2>
           <ul class="socialmedia-align">
             <li>
               <a
@@ -268,7 +264,7 @@
                   class="arrow-margin"
                   height="13"
                   width="18"
-                  alt="arrow"
+                  alt="Languages arrow menu"
               /></label>
             </h2>
             <div class="content">
@@ -278,11 +274,11 @@
                   <span>JavaScript</span>
                 </li>
                 <li>
-                  <img src="./assets/html-logo.png" alt="javascript-logo" />
+                  <img src="./assets/html-logo.png" alt="html-logo" />
                   <span>HTML</span>
                 </li>
                 <li>
-                  <img src="./assets/css-logo.png" alt="javascript-logo" />
+                  <img src="./assets/css-logo.png" alt="css-logo" />
                   <span>CSS</span>
                 </li>
               </ul>
@@ -300,18 +296,18 @@
                   class="arrow-margin"
                   height="13"
                   width="18"
-                  alt="arrow"
+                  alt="Frameworks arrow menu"
                 />
               </label>
             </h2>
             <div class="content">
               <ul class="ul_box">
                 <li>
-                  <img src="./assets/react-logo.png" alt="javascript-logo" />
+                  <img src="./assets/react-logo.png" alt="React.js logo" />
                   <span>React js</span>
                 </li>
                 <li>
-                  <img src="./assets/express-logo.png" alt="javascript-logo" />
+                  <img src="./assets/express-logo.png" alt="Express.js logo" />
                   <span>Express js</span>
                 </li>
               </ul>
@@ -329,18 +325,18 @@
                   class="arrow-margin"
                   height="13"
                   width="18"
-                  alt="arrow"
+                  alt="Skills arrow menu"
                 />
               </label>
             </h2>
             <div class="content">
               <ul class="ul_box">
                 <li>
-                  <img src="./assets/voice-logo.png" alt="javascript-logo" />
+                  <img src="./assets/voice-logo.png" alt="Soft skills logo" />
                   <span>Soft skills</span>
                 </li>
                 <li>
-                  <img src="./assets/group-logo.png" alt="javascript-logo" />
+                  <img src="./assets/group-logo.png" alt="Group work logo" />
                   <span>Group work</span>
                 </li>
               </ul>
@@ -381,6 +377,7 @@
                 required
                 placeholder="Enter your email"
               />
+
               <textarea
                 id="message"
                 maxlength="500"
@@ -398,5 +395,20 @@
         <!-- Below here should be the contact form -->
       </div>
     </section>
+    </div>
+    <div class="mobileMenuCover" id="mobileMenuCover">
+      <div class="firstContainer">
+        <span id="closeButton">X</span>
+      </div>
+      <div class="mobileMenu">
+        <ul>
+          <li class="mobileMenuItems"><a href="#portfolio" class="mobileMenuItems-a">Portfolio</a></li>
+          <li class="mobileMenuItems"><a href="#about" class="mobileMenuItems-a">About</a></li>
+          <li class="mobileMenuItems"><a href="#contact" class="mobileMenuItems-a" >Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

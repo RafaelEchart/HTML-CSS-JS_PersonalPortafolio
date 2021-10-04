@@ -111,7 +111,6 @@ h1 {
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
   width: 100%;
   z-index: 3;
 }
@@ -603,4 +602,38 @@ h1 {
     max-width: 1350px;
     margin: auto;
   }
+}
+
+.mobileMenuCover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #6070ff;
+  height: 100vh;
+  opacity: 0.9;
+  display: none;
+  mix-blend-mode: multiply;
+}
+
+.firstContainer {
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 24px;
+  color: antiquewhite;
+}
+
+.mobileMenuItems {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.mobileMenuItems-a {
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
