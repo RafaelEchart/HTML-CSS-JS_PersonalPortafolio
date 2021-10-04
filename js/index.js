@@ -11,7 +11,6 @@ function toggleMenu() {
 function closeMenu() {
   menuCover.style.display = 'none';
   menuButton.style.display = 'block';
-
 }
 
 menuButton.addEventListener('click', toggleMenu);
