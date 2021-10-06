@@ -648,7 +648,7 @@ h1 {
   color: #fff;
 }
 
-/***/
+/**   */
 
 .projectDetailsModal {
   position: fixed;
@@ -659,6 +659,29 @@ h1 {
   height: 100vh;
   display: none;
   overflow-y: auto;
+  transition: opacity 0.5s;
+
+  /* opacity: 0 */
+}
+
+@keyframes open-modal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close-modal {
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
+  }
 }
 
 .innerDiv {
@@ -671,6 +694,8 @@ h1 {
   flex-direction: column;
   align-content: flex-end;
   align-items: flex-end;
+
+  /* max-width: 1200px; */
 }
 
 .title-modal-align {
@@ -726,7 +751,7 @@ h1 {
   top: 4%;
   right: 10%;
   background-color: transparent;
-  border: 0px;
+  border: 0;
   color: white;
 }
 
@@ -741,10 +766,10 @@ h1 {
 
 .modal-img {
   width: 100%;
+  max-width: 554px;
+  margin: auto;
   border-radius: 11px;
 }
-
-/**/
 
 .modalCover {
   position: fixed;
@@ -753,6 +778,7 @@ h1 {
   width: 100%;
   background-color: lightgray;
   height: 100vh;
+
   /* opacity: 0.9; */
   display: block;
   mix-blend-mode: multiply;
@@ -779,6 +805,7 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .see_project_button img {
@@ -791,44 +818,61 @@ h1 {
 
 .modal-tag-label {
   font-size: 12px;
+  margin-right: 2px;
 }
 
 @media only screen and (min-width: 768px) {
   .tag-button-descripcion-container {
     display: flex;
     flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
   }
 
-  .project-description{
+  .project-description {
     width: 65%;
     margin-right: 3%;
   }
 
   .tag-button-container {
-    width: 30%;
+    width: 34%;
   }
-  .modal-buttons-container button span{
+
+  .modal-buttons-container a button span {
     font-size: 12px;
   }
 
-  .modal-buttons-container button{
-    margin: 1.2px
+  .modal-buttons-container a button {
+    margin: 1.2px;
   }
 
- 
-
- 
-  
+  .modal-buttons-container {
+    display: block;
+  }
 }
+
+@media only screen and (min-width: 920px) {
+  .modal-buttons-container {
+    display: flex;
+  }
+}
+
 @media only screen and (min-width: 992px) {
-  
-  .modal-buttons-container button span{
+  .modal-buttons-container a button span {
     font-size: 17px;
   }
-  
+
   .see_project_button img {
     margin-right: 7px;
-}
+  }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}

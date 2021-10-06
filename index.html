@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="origin" />
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -33,84 +33,37 @@
   </head>
   <body>
     <div class="main">
-    <header class="header">
-      <div class="max-width-header">
-        <a href="#" class="logo">Rafael Echart</a>
-        <div class="desktopMenu">
-          <input class="menu-btn" type="checkbox" title="Reset Form" value="Reset Form" id="menu-btn" />
-          <nav>
-            <label class="menu-icon"  id="menuButton" for="menu-btn">
-              <span class="navicon" ></span
-            ></label>
-          </nav>
+      <header class="header">
+        <div class="max-width-header">
+          <a href="#" class="logo">Rafael Echart</a>
+          <div class="desktopMenu">
+            <input
+              class="menu-btn"
+              type="checkbox"
+              title="Reset Form"
+              value="Reset Form"
+              id="menu-btn"
+            />
+            <nav>
+              <label class="menu-icon" id="menuButton" for="menu-btn">
+                <span class="navicon"></span
+              ></label>
+            </nav>
+          </div>
+
+          <div class="topnav desktopMenu-up" id="myTopnav">
+            <a class="hover_header" href="#portfolio">Portfolio</a>
+            <a class="hover_header" href="#about">About</a>
+            <a class="hover_header" href="#contact">Contact</a>
+          </div>
         </div>
+      </header>
 
-        <div class="topnav desktopMenu-up" id="myTopnav">
-          <a class="hover_header" href="#portfolio">Portfolio</a>
-          <a class="hover_header" href="#about">About</a>
-          <a class="hover_header" href="#contact">Contact</a>
-        </div>
-      </div>
-    </header>
-
-    <section class="background center-title">
-      <div class="welcome-items">
-        <h1>
-          I'm Rafael<br />
-          Glad to see you!
-        </h1>
-
-        <p class="welcome-text">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <h2 class="subtitle-color">LET'S CONNECT</h2>
-        <ul class="socialmedia-align">
-          <li>
-            <a
-              href="https://twitter.com/rafaechart"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./assets/twitter.png" alt="twitter_logo"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/RafaelEchart"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./assets/github.png" alt="github_logo"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/rafaelechart/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./assets/Linkedin.png" alt="linkedin_logo"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="division">
-      <div class="cards" id="portfolio">
-        <!-- Portfolio loaded dynamically -->
-      </div>
-    </section>
-
-    <section class="division about-me">
-      <div
-        class="about_me_container desktop-query-about-me-container"
-        id="about"
-      >
-        <div class="welcome-items2">
-          <h1 class="division">
-            About<br />
-            Myself
+      <section class="background center-title">
+        <div class="welcome-items">
+          <h1>
+            I'm Rafael<br />
+            Glad to see you!
           </h1>
 
           <p class="welcome-text">
@@ -146,157 +99,213 @@
               /></a>
             </li>
           </ul>
-          <button type="button" class="see_project_button">
-            <span>Get my resume</span>
-          </button>
         </div>
+      </section>
 
-        <div class="welcome-items2">
-          <section class="accordion">
-            <input
-              type="checkbox"
-              name="collapse"
-              id="handle1"
-              checked="checked"
-            />
-            <h2 class="handle">
-              <label for="handle1"
-                >Languages<img
-                  src="./assets/arrow.png"
-                  class="arrow-margin"
-                  height="13"
-                  width="18"
-                  alt="Languages arrow menu"
-              /></label>
-            </h2>
-            <div class="content">
-              <ul class="ul_box">
-                <li>
-                  <img src="./assets/js-logo.png" alt="javascript-logo" />
-                  <span>JavaScript</span>
-                </li>
-                <li>
-                  <img src="./assets/html-logo.png" alt="html-logo" />
-                  <span>HTML</span>
-                </li>
-                <li>
-                  <img src="./assets/css-logo.png" alt="css-logo" />
-                  <span>CSS</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <hr />
-
-          <section class="accordion">
-            <input type="checkbox" name="collapse2" id="handle3" />
-            <h2 class="handle">
-              <label for="handle3"
-                >Frameworks<img
-                  src="./assets/arrow.png"
-                  class="arrow-margin"
-                  height="13"
-                  width="18"
-                  alt="Frameworks arrow menu"
-                />
-              </label>
-            </h2>
-            <div class="content">
-              <ul class="ul_box">
-                <li>
-                  <img src="./assets/react-logo.png" alt="React.js logo" />
-                  <span>React js</span>
-                </li>
-                <li>
-                  <img src="./assets/express-logo.png" alt="Express.js logo" />
-                  <span>Express js</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <hr />
-
-          <section class="accordion">
-            <input type="checkbox" name="collapse3" id="handle2" />
-            <h2 class="handle">
-              <label for="handle2"
-                >Skills<img
-                  src="./assets/arrow.png"
-                  class="arrow-margin"
-                  height="13"
-                  width="18"
-                  alt="Skills arrow menu"
-                />
-              </label>
-            </h2>
-            <div class="content">
-              <ul class="ul_box">
-                <li>
-                  <img src="./assets/voice-logo.png" alt="Soft skills logo" />
-                  <span>Soft skills</span>
-                </li>
-                <li>
-                  <img src="./assets/group-logo.png" alt="Group work logo" />
-                  <span>Group work</span>
-                </li>
-              </ul>
-            </div>
-            <!-- Below here should be the contact form -->
-            <br />
-            <br />
-            <br />
-          </section>
+      <section class="division">
+        <div class="cards" id="portfolio">
+          <!-- Portfolio loaded dynamically -->
         </div>
-      </div>
-    </section>
-    <section class="contact-me" id="contact">
-      <div class="about_me_container">
-        <div class="contact-items">
-          <h1 class="division-about-me">Contact me</h1>
+      </section>
 
-          <p class="aboutme-text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
+      <section class="division about-me">
+        <div
+          class="about_me_container desktop-query-about-me-container"
+          id="about"
+        >
+          <div class="welcome-items2">
+            <h1 class="division">
+              About<br />
+              Myself
+            </h1>
 
-          <div class="form-container">
-            <form action="https://formspree.io/f/mayavlvq" method="POST">
+            <p class="welcome-text">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <h2 class="subtitle-color">LET'S CONNECT</h2>
+            <ul class="socialmedia-align">
+              <li>
+                <a
+                  href="https://twitter.com/rafaechart"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><img src="./assets/twitter.png" alt="twitter_logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RafaelEchart"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><img src="./assets/github.png" alt="github_logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rafaelechart/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><img src="./assets/Linkedin.png" alt="linkedin_logo"
+                /></a>
+              </li>
+            </ul>
+            <button type="button" class="see_project_button">
+              <span>Get my resume</span>
+            </button>
+          </div>
+
+          <div class="welcome-items2">
+            <section class="accordion">
               <input
-                type="text"
-                id="name"
-                name="name"
-                maxlength="30"
-                required
-                placeholder="Enter your name"
+                type="checkbox"
+                name="collapse"
+                id="handle1"
+                checked="checked"
               />
-              <input
-                type="email"
-                id="email"
-                name="_replyto"
-                required
-                placeholder="Enter your email"
-              />
+              <h2 class="handle">
+                <label for="handle1"
+                  >Languages<img
+                    src="./assets/arrow.png"
+                    class="arrow-margin"
+                    height="13"
+                    width="18"
+                    alt="Languages arrow menu"
+                /></label>
+              </h2>
+              <div class="content">
+                <ul class="ul_box">
+                  <li>
+                    <img src="./assets/js-logo.png" alt="javascript-logo" />
+                    <span>JavaScript</span>
+                  </li>
+                  <li>
+                    <img src="./assets/html-logo.png" alt="html-logo" />
+                    <span>HTML</span>
+                  </li>
+                  <li>
+                    <img src="./assets/css-logo.png" alt="css-logo" />
+                    <span>CSS</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-              <textarea
-                id="message"
-                maxlength="500"
-                name="message"
-                required
-                placeholder="Write a message.."
-              ></textarea>
-              <button type="submit" class="send_form_button">
-                <span>Send message!</span>
-              </button>
-            </form>
+            <hr />
+
+            <section class="accordion">
+              <input type="checkbox" name="collapse2" id="handle3" />
+              <h2 class="handle">
+                <label for="handle3"
+                  >Frameworks<img
+                    src="./assets/arrow.png"
+                    class="arrow-margin"
+                    height="13"
+                    width="18"
+                    alt="Frameworks arrow menu"
+                  />
+                </label>
+              </h2>
+              <div class="content">
+                <ul class="ul_box">
+                  <li>
+                    <img src="./assets/react-logo.png" alt="React.js logo" />
+                    <span>React js</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/express-logo.png"
+                      alt="Express.js logo"
+                    />
+                    <span>Express js</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <hr />
+
+            <section class="accordion">
+              <input type="checkbox" name="collapse3" id="handle2" />
+              <h2 class="handle">
+                <label for="handle2"
+                  >Skills<img
+                    src="./assets/arrow.png"
+                    class="arrow-margin"
+                    height="13"
+                    width="18"
+                    alt="Skills arrow menu"
+                  />
+                </label>
+              </h2>
+              <div class="content">
+                <ul class="ul_box">
+                  <li>
+                    <img src="./assets/voice-logo.png" alt="Soft skills logo" />
+                    <span>Soft skills</span>
+                  </li>
+                  <li>
+                    <img src="./assets/group-logo.png" alt="Group work logo" />
+                    <span>Group work</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Below here should be the contact form -->
+              <br />
+              <br />
+              <br />
+            </section>
           </div>
         </div>
+      </section>
+      <section class="contact-me" id="contact">
+        <div class="about_me_container">
+          <div class="contact-items">
+            <h1 class="division-about-me">Contact me</h1>
 
-        <!-- Below here should be the contact form -->
-      </div>
-    </section>
+            <p class="aboutme-text">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+
+            <div class="form-container">
+              <form action="https://formspree.io/f/mayavlvq" method="POST">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  maxlength="30"
+                  required
+                  placeholder="Enter your name"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  required
+                  placeholder="Enter your email"
+                />
+
+                <textarea
+                  id="message"
+                  maxlength="500"
+                  name="message"
+                  required
+                  placeholder="Write a message.."
+                ></textarea>
+                <button type="submit" class="send_form_button">
+                  <span>Send message!</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Below here should be the menu -->
+        </div>
+      </section>
     </div>
     <div class="mobileMenuCover" id="mobileMenuCover">
       <div class="firstContainer">
@@ -304,60 +313,73 @@
       </div>
       <div class="mobileMenu">
         <ul>
-          <li class="mobileMenuItems"><a href="#portfolio" class="mobileMenuItems-a">Portfolio</a></li>
-          <li class="mobileMenuItems"><a href="#about" class="mobileMenuItems-a">About</a></li>
-          <li class="mobileMenuItems"><a href="#contact" class="mobileMenuItems-a" >Contact</a></li>
+          <li class="mobileMenuItems">
+            <a href="#portfolio" class="mobileMenuItems-a">Portfolio</a>
+          </li>
+          <li class="mobileMenuItems">
+            <a href="#about" class="mobileMenuItems-a">About</a>
+          </li>
+          <li class="mobileMenuItems">
+            <a href="#contact" class="mobileMenuItems-a">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
 
+    <!-- Below here should be the modal -->
     <div class="projectDetailsModal gray">
       <div class="innerDiv">
-        <div class="modal-container-one"><div>
-          <h4 class="title-modal-align" id="modal-title">Tonic</h4>
-        </div><span class="close-modal">x</span></div>
+        <div class="modal-container-one">
+          <div>
+            <h4 class="title-modal-align" id="modal-title">Tonic</h4>
+          </div>
+          <span class="close-modal">x</span>
+        </div>
 
         <div class="flex_child">
           <span class="little_category" id="modal-category">ECOMMERCE</span>
           <span class="gray_text">• Full Stack Dev </span>
           <span class="gray_text" id="modal-year">• 2019</span>
-        </div> 
+        </div>
 
         <div class="modal-card division-modal">
-          <img src="./assets/proyecto3.png" alt="smartfacedetector" class="modal-img" id="modal-img" />
+          <img
+            src="./assets/proyecto3.png"
+            alt="smartfacedetector"
+            class="modal-img"
+            id="modal-img"
+          />
           <div class="tag-button-descripcion-container">
-            
             <div class="project-description division-modal" id="modal-desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s with the releaLorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it
+              1960s with the relea
             </div>
 
             <div class="tag-button-container">
+              <div class="division-modal" id="modal-tech"></div>
 
-            
-            <div class="division-modal" id="modal-tech">
+              <hr class="division-modal hr-style" />
+              <div class="modal-buttons-container">
+                <button type="button" class="see_project_button innerFlex" id="see_live">
+                    <span>See live</span>
+                    <img src="./assets/Icon.png" alt="live_link" />
+                </button>
+                <button type="button" class="see_project_button innerFlex" id="see_source">
+                    <span>See Source</span>
+                    <img src="./assets/github-purple.png" alt="github_link"/>
+                </button>
+              </div>
             </div>
-
-            <hr class="division-modal hr-style"/>
-            <div class="modal-buttons-container">
-
-              <button type="button" class="see_project_button innerFlex">
-                <span>See live</span>
-                <img src="./assets/Icon.png">
-              </button>
-              <button type="button" class="see_project_button innerFlex">
-                <span>See Source</span>
-                <img src="./assets/github-purple.png">
-              </button>
-            </div>
-          </div>
           </div>
         </div>
       </div>
     </div>
-
-
-    
-
 
     <script src="./js/index.js"></script>
   </body>
