@@ -657,7 +657,7 @@ h1 {
   width: 100%;
   background: rgba(193, 199, 208, 0.8);
   height: 100vh;
-  display: block;
+  display: none;
   overflow-y: auto;
 }
 

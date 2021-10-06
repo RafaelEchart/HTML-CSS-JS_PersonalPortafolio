@@ -98,105 +98,7 @@
 
     <section class="division">
       <div class="cards" id="portfolio">
-        <div class="card division flex-card">
-          <div class="align_images">
-            <img
-              src="./assets/proyecto1.png"
-              width="554"
-              class="imagen_proyectos"
-              alt="proyect Ecommerce"
-            />
-          </div>
-          <div class="text_child">
-            <h1>Ecommerce Store</h1>
-            <div class="flex_child">
-              <span class="little_category">ECOMMERCE</span>
-              <span class="gray_text">• Full Stack Dev </span>
-              <span class="gray_text">• 2019</span>
-            </div>
-
-            <p>
-              Manage your products, categories, and clients, secure enviroment,
-              responsive and lightweight.
-            </p>
-
-            <div class="division">
-              <label class="tag_label">React js</label>
-              <label class="tag_label">Node backend</label>
-            </div>
-
-            <button type="button" class="see_project_button">
-              <span>See project</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="card division flex-card2">
-          <div class="text_child">
-            <h1>Ecommerce Dashboard</h1>
-            <div class="flex_child">
-              <span class="little_category">ECOMMERCE</span>
-              <span class="gray_text">• Full Stack Dev </span>
-              <span class="gray_text">• 2019</span>
-            </div>
-
-            <p>
-              Online store with the chance of register new clients, multiple
-              payment methods, safe connection to database.
-            </p>
-
-            <div class="division">
-              <label class="tag_label">React js</label>
-              <label class="tag_label">Node backend</label>
-            </div>
-
-            <button type="button" class="see_project_button">
-              <span>See project</span>
-            </button>
-          </div>
-
-          <div class="align_images">
-            <img
-              src="./assets/proyecto2.png"
-              width="554"
-              class="imagen_proyectos"
-              alt="proyecto dashboard"
-            />
-          </div>
-        </div>
-
-        <div class="card division flex-card">
-          <div class="align_images">
-            <img
-              src="./assets/proyecto3.png"
-              width="554"
-              class="imagen_proyectos"
-              alt="proyecto_1"
-            />
-          </div>
-          <div class="text_child">
-            <h1>Landing Page</h1>
-            <div class="flex_child">
-              <span class="little_category">SALES</span>
-              <span class="gray_text">• Frontend Dev </span>
-              <span class="gray_text">• 2020</span>
-            </div>
-
-            <p>
-              Show a product, service or a comodity, and increase your sells
-              with one click payment link.
-            </p>
-
-            <div class="division">
-              <label class="tag_label">Vue js</label>
-              <label class="tag_label">CSS</label>
-            </div>
-
-            <button type="button" class="see_project_button">
-              <span>See project</span>
-            </button>
-          </div>
-        </div>
+        <!-- Portfolio loaded dynamically -->
       </div>
     </section>
 
@@ -412,30 +314,27 @@
     <div class="projectDetailsModal gray">
       <div class="innerDiv">
         <div class="modal-container-one"><div>
-          <h4 class="title-modal-align">Tonic</h4>
+          <h4 class="title-modal-align" id="modal-title">Tonic</h4>
         </div><span class="close-modal">x</span></div>
 
         <div class="flex_child">
-          <span class="little_category">ECOMMERCE</span>
+          <span class="little_category" id="modal-category">ECOMMERCE</span>
           <span class="gray_text">• Full Stack Dev </span>
-          <span class="gray_text">• 2019</span>
+          <span class="gray_text" id="modal-year">• 2019</span>
         </div> 
 
         <div class="modal-card division-modal">
-          <img src="./assets/proyecto3.png" alt="smartfacedetector" class="modal-img" />
+          <img src="./assets/proyecto3.png" alt="smartfacedetector" class="modal-img" id="modal-img" />
           <div class="tag-button-descripcion-container">
             
-            <div class="project-description division-modal">
+            <div class="project-description division-modal" id="modal-desc">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
             </div>
 
             <div class="tag-button-container">
 
             
-            <div class="division-modal">
-              <label class="tag_label modal-tag-label">React js</label>
-              <label class="tag_label modal-tag-label">Node backend</label>
-              
+            <div class="division-modal" id="modal-tech">
             </div>
 
             <hr class="division-modal hr-style"/>
