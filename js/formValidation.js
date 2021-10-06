@@ -6,15 +6,14 @@ function checkForm(form) {
 
   if (email.value === email.value.toLowerCase()) {
     return true;
-  } else {
-
-    email.style.border = '1px solid red';
-    email.style.boxShadow = '0 0 5pt 1pt #ff0000';
-
-    error.innerHTML = "Email must be lowercase!";
-    error.style.display = "block";
-
-    form.email.focus();
-    return false;
   }
+
+  email.style.border = '1px solid red';
+  email.style.boxShadow = '0 0 5pt 1pt #ff0000';
+
+  error.innerHTML = 'Email must be lowercase!';
+  error.style.display = 'block';
+
+  form.email.focus();
+  return false;
 }

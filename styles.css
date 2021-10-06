@@ -879,14 +879,14 @@ h1 {
 
 .errorMessage {
   margin-left: 10px;
-  color: #D8000C;
+  color: #d8000c;
   font-size: 15px;
   display: none;
-  text-align:left;
+  text-align: left;
 }
 
 .button-error {
   display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
