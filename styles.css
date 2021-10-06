@@ -876,3 +876,17 @@ h1 {
     opacity: 1;
   }
 }
+
+.errorMessage {
+  margin-left: 10px;
+  color: #D8000C;
+  font-size: 15px;
+  display: none;
+  text-align:left;
+}
+
+.button-error {
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
