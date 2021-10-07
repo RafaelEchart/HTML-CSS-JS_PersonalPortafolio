@@ -22,24 +22,26 @@ function checkForm(form) {
   return false;
 }
 
+//* **User input save***/
+
 let localData = { name: '', email: '', message: '' };
 
 const onChangeInputHandler = (event) => {
-  switch(event.name) {
+  switch (event.name) {
     case 'name':
-      localData = { ...localData, name: event.value}
-    break
+      localData = { ...localData, name: event.value };
+      break;
     case 'email':
-      localData = { ...localData, email: event.value}
-    break
+      localData = { ...localData, email: event.value };
+      break;
     case 'message':
-      localData = { ...localData, message: event.value}
-    break
+      localData = { ...localData, message: event.value };
+      break;
     default:
-      break
+      break;
   }
-  localStorage.setItem("data", JSON.stringify(localData));
-}
+  localStorage.setItem('data', JSON.stringify(localData));
+};
 
 // when page loads
 const reloadData = JSON.parse(localStorage.getItem('data'));
