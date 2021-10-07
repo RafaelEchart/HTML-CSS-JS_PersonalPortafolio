@@ -280,6 +280,7 @@
                   maxlength="30"
                   required
                   placeholder="Enter your name"
+                  oninput="onChangeInputHandler(this)"
                 />
                 <input
                   type="email"
@@ -287,6 +288,7 @@
                   name="email"
                   required
                   placeholder="Enter your email"
+                  oninput="onChangeInputHandler(this)"
                 />
 
                 <textarea
@@ -295,6 +297,7 @@
                   name="message"
                   required
                   placeholder="Write a message.."
+                  oninput="onChangeInputHandler(this)"
                 ></textarea>
                 <span class="errorMessage" id="errorMessage"></span>
                 
