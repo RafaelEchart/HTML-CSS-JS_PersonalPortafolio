@@ -30,8 +30,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- git clone https://github.com/RafaelEchart/PersonalPortfolio.git
-- cd PersonalPortfolio
+- git clone https://github.com/RafaelEchart/HTML-CSS-JS_PersonalPortafolio.git
+- cd HTML-CSS-JS_PersonalPortafolio
 
 ### Usage
 
